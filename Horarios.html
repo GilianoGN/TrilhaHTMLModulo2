@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+</head>
+<body>
+<h2>Grade de Horários - Portal Vitalis</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dia da Semana</th>
+                <th>Presencial (Clínica)</th>
+                <th>Telemedicina</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Segunda a Sexta</td>
+                <td>08:00 - 18:00</td>
+                <td><span class="status-online">24 Horas (Plantão)</span></td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>08:00 - 12:00</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>Fechado</td>
+                <td><span class="status-online">Plantão Digital</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="info-extra">
+        <strong>Nota importante:</strong> Para atendimentos de urgência em telemedicina após as 22h, utilize o botão de "Emergência Virtual" abaixo do menu.
+    </div></body>
+</html>
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+        color: #333;
+    }
+    h2 {
+        color: #056c6c;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        background-color: white;
+    }
+    th, td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #056c6c;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+    .status-online {
+        color: #27ae60;
+        font-weight: bold;
+    }
+    .info-extra {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #e0f7fa;
+        border-left: 5px solid #6338f0;
+        font-size: 0.9em;
+    }
+</style>

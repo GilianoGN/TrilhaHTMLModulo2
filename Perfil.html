@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Profissional - Giliano G. Novais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            color: #24292f;
+            display: flex;
+            gap: 40px;
+            background-color: #ffffff;
+        }
+
+        /* Sidebar Profissional */
+        .sidebar { width: 300px; }
+        .profile-pic { width: 100%; border-radius: 50%; border: 1px solid #d0d7de; }
+        .name { font-size: 24px; font-weight: 600; margin-top: 16px; margin-bottom: 4px; }
+        .username { font-size: 20px; color: #57606a; font-weight: 300; margin-bottom: 20px; }
+        .bio-short { font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
+        
+        /* Seções do Conteúdo */
+        .main-content { flex: 1; }
+        .readme-box { 
+            border: 1px solid #d0d7de; 
+            border-radius: 6px; 
+            padding: 32px;
+            background-color: #fff;
+        }
+        
+        h2, h3 { border-bottom: 1px solid #d0d7de; padding-bottom: 8px; margin-top: 24px; }
+        .skill-category { font-weight: bold; margin-top: 15px; display: block; color: #056c6c; }
+        
+        .badges-container { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
+        .badges-container img { height: 28px; }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .project-card {
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: 0.2s;
+        }
+        .project-card:hover { border-color: #0969da; background-color: #f6f8fa; }
+        .project-card strong { color: #0969da; }
+
+        .contact-badges { margin-top: 20px; display: flex; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <img src="https://github.com/GilianoGN.png" alt="Giliano G. Novais" class="profile-pic">
+        <h1 class="name">Giliano G. Novais</h1>
+        <p class="username">GilianoGN 👋</p>
+        <p class="bio-short">
+            Coordenador de Planejamento e Engenheiro Naval em transição para <strong>Desenvolvedor Java Júnior / Analista de Sistemas</strong>.
+        </p>
+        <hr>
+        <div style="font-size: 14px; color: #57606a;">
+            <p>📍 São Gonçalo, RJ</p>
+            <p>🎓 ADS na Anhanguera</p>
+        </div>
+        
+        <div class="contact-badges">
+            <a href="https://www.linkedin.com/in/dev-giliano-gomes-novais/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" height="25"></a>
+            <a href="mailto:vipergiliano@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" height="25"></a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="readme-box">
+            <h2>Sobre Mim</h2>
+            <p>Profissional com sólida trajetória em Coordenação de Planejamento e Engenharia Naval. Minha experiência anterior me proporcionou habilidades em gestão, pensamento crítico e excelente relacionamento interpessoal.</p>
+
+            <h3>Tecnologias e Habilidades</h3>
+            
+            <span class="skill-category">Backend & Banco de Dados</span>
+            <div class="badges-container">
+                <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+                <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+                <img src="https://img.shields.io/badge/CSharp-239120?style=for-the-badge&logo=c-sharp&logoColor=white">
+                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+                <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
+            </div>
+
+            <span class="skill-category">Frontend & Mobile</span>
+            <div class="badges-container">
+                <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
+                <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+                <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+            </div>
+
+            <h3>Projetos em Destaque</h3>
+            <div class="project-grid">
+                <a href="https://github.com/GilianoGN/Projeto_Arkanoid" target="_blank" class="project-card">
+                    <strong>Projeto Arkanoid</strong>
+                    <p style="font-size: 12px;">Desenvolvimento de jogo clássico explorando lógica de programação.</p>
+                </a>
+                <a href="https://github.com/GilianoGN/sudokogame" target="_blank" class="project-card">
+                    <strong>Sudoku Game</strong>
+                    <p style="font-size: 12px;">Desafio de lógica implementado com foco em algoritmos.</p>
+                </a>
+                <a href="https://github.com/GilianoGN/App-Buzzfeed-Angular" target="_blank" class="project-card">
+                    <strong>App Buzzfeed</strong>
+                    <p style="font-size: 12px;">Aplicação web dinâmica desenvolvida utilizando Angular v17+.</p>
+                </a>
+                <a href="#" class="project-card">
+                    <strong>Portal Vitalis</strong>
+                    <p style="font-size: 12px;">Este projeto: Portal médico com iFrames e layout responsivo.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
