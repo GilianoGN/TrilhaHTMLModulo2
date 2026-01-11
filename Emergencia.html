@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergência Virtual - Portal Vitalis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+            background-color: #fff5f5; /* Tom leve de alerta */
+            color: #333;
+        }
+
+        .container-emergencia {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-top: 8px solid #ff4b2b;
+        }
+
+        .alerta-header h1 {
+            color: #ff4b2b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .mensagem-simulada {
+            background-color: #f8f9fa;
+            border-left: 5px solid #056c6c;
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .telefones-rj {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card-tel {
+            padding: 20px;
+            background-color: #ff4b2b;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .card-tel h3 { margin: 0; font-size: 1.2em; }
+        .card-tel .numero { font-size: 2em; font-weight: bold; display: block; margin-top: 10px; }
+
+        .aviso {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-emergencia">
+        <div class="alerta-header">
+            <h1>🆘 Emergência Virtual</h1>
+            <p>Estamos conectando você a um médico de plantão...</p>
+        </div>
+
+        <div class="mensagem-simulada">
+            "Iniciando triagem digital... Por favor, mantenha a calma. Um médico intensivista do Portal Vitalis entrará na chamada em instantes. Se o caso for de risco imediato à vida, utilize um dos números abaixo."
+        </div>
+
+        <h2>Números de Emergência (Rio de Janeiro)</h2>
+        <div class="telefones-rj">
+            <div class="card-tel">
+                <h3>SAMU</h3>
+                <span class="numero">192</span>
+            </div>
+            <div class="card-tel">
+                <h3>Bombeiros</h3>
+                <span class="numero">193</span>
+            </div>
+            <div class="card-tel">
+                <h3>Polícia Militar</h3>
+                <span class="numero">190</span>
+            </div>
+        </div>
+
+        <div class="aviso">
+            <p><strong>Atenção:</strong> A Emergência Virtual é indicada para orientações rápidas. Em casos de dor no peito intensa, falta de ar grave ou acidentes, ligue imediatamente para o 192.</p>
+        </div>
+    </div>
+
+</body>
+</html>
